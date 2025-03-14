@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="py-10">
+      <nav
+        class="container flex flex-row items-center justify-between px-10 mx-auto"
+      >
+        <a href="" class="font-bold text-[27px]"
+          >A+ <span class="font-normal">Studio</span></a
+        >
+        <div class="flex flex-col gap-1 md:hidden" id="hamburger">
+          <span class="bg-black h-[2px] w-[15px] ml-[7px] inline-block"></span>
+          <span class="bg-black h-[2px] w-[22px] inline-block"></span>
+        </div>
+        <ul
+          class="hidden flex-row gap-[60px] items-center justify-start md:flex md:gap-8"
+        >
+          <li
+            class="relative transition-all duration-500 ease-linear hover:text-[#565656]"
+          >
+            <a href="#">home</a>
+          </li>
+          <li
+            class="relative transition-all duration-500 ease-linear hover:text-[#565656]"
+          >
+            <a href="#">Services</a>
+          </li>
+          <li
+            class="relative transition-all duration-500 ease-linear hover:text-[#565656]"
+          >
+            <a href="#">Project</a>
+          </li>
+          <li
+            class="relative transition-all duration-500 ease-linear hover:text-[#565656]"
+          >
+            <a href="#">What We do</a>
+          </li>
+          <li
+            class="relative transition-all duration-500 ease-linear hover:text-[#565656]"
+          >
+            <a href="#">Blog</a>
+          </li>
+          <li
+            class="relative transition-all duration-500 ease-linear hover:text-[#565656]"
+          >
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav
+        class="fixed z-30 w-full h-full transition-transform duration-500 ease-in-out bg-white right-0 top-0 translate-x-full md:hidden"
+        id="mobile-nav"
+      >
+        <div
+          class="absolute right-10 top-10 w-6 h-6 flex items-center justify-center cursor-pointer"
+          id="close-icon"
+        >
+          <span class="block absolute w-6 h-[2px] bg-black rotate-45"></span>
+          <span class="block absolute w-6 h-[2px] bg-black -rotate-45"></span>
+        </div>
+        <ul
+          class="flex flex-col items-center justify-center h-full gap-10 px-10 py-16 text-3xl text-[#565656]"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="px-10">
+      <div class="container flex flex-col items-center justify-start gap-24 mx-auto md:flex-row">
+        <div class="flex flex-col items-start flex-[0.6] gap-10 relative">
+          <h1 class="text-black text-[40px] font-extrabold">Agencia de Marketing Digital</h1>
+          <p class="text-[#565656] text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem iste voluptatum dolorum ut odio impedit hic, repellendus et quisquam maiores consectetur velit, delectus obcaecati earum.</p>
+          <button class="bg-[#2639ED] text-white text-xl py-5 px-10 rounded-full z-10">Contactanos</button>
+          <img src="images/Dot.png" alt="dot" class="absolute -bottom-[42%] z-0 left-14 w-full">
+        </div>
+        <div class="relative flex flex-1">
+          <img src="images/Ellipse.png" alt="dot" class="absolute -left-14">
+          <img src="images/hero-image.png" alt="hero" class="z-10 w-full">
+          <img src="images/Rectangle.png" alt="Rectangle" class="absolute w-[43%] right-4 -bottom-12 md:w-auto md:right-28 md:-bottom-24">
+        </div>
+      </div>
+    </section>
+
+    <script src="/src/main.js"></script>
+  </body>
+</html>
